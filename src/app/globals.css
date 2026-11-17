@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* ─── Design tokens ───────────────────────────────────────────────────── */
+@theme {
+  /* Colour palette */
+  --color-canvas: #0a0a0a;
+  --color-surface: #111111;
+  --color-lift: #191919;
+  --color-rim: #272727;
+  --color-ink: #ede8e3;
+  --color-soft: #9e9892;
+  --color-muted: #5c5955;
+  --color-teal: #2dd4bf;
+  --color-teal-bg: #2dd4bf1a;
+
+  /* Typography */
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-space-grotesk);
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-teal-bg);
+  color: var(--color-ink);
+}
+
+/* ─── Focus ring ──────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
