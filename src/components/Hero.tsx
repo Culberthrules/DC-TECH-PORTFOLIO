@@ -34,6 +34,50 @@ export default function Hero() {
         </div>
       </div>
 
+      <div
+        aria-hidden="true"
+        className="group absolute right-6 top-1/2 hidden w-[min(34vw,23rem)] -translate-y-1/2 rounded-xl border border-rim bg-surface/80 p-5 font-mono text-xs shadow-2xl shadow-teal/5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-[52%] hover:border-teal/40 lg:block"
+      >
+        <div className="mb-5 flex items-center justify-between border-b border-rim pb-4 text-muted">
+          <div className="flex items-center gap-1.5">
+            <span className="size-2 rounded-full bg-[#ff5f57]" />
+            <span className="size-2 rounded-full bg-[#febc2e]" />
+            <span className="size-2 rounded-full bg-[#28c840]" />
+          </div>
+          <span>src/portfolio.ts</span>
+        </div>
+        <div className="space-y-2 leading-relaxed">
+          <p>
+            <span className="mr-4 text-muted">01</span>
+            <span className="text-[#c792ea]">const</span>{" "}
+            <span className="text-[#82aaff]">developer</span> = {"{"}
+          </p>
+          <p>
+            <span className="mr-4 text-muted">02</span>
+            <span className="text-soft">name:</span>{" "}
+            <span className="text-[#c3e88d]">&quot;Damasus&quot;</span>,
+          </p>
+          <p>
+            <span className="mr-4 text-muted">03</span>
+            <span className="text-soft">craft:</span>{" "}
+            <span className="text-[#c3e88d]">&quot;web experiences&quot;</span>,
+          </p>
+          <p>
+            <span className="mr-4 text-muted">04</span>
+            <span className="text-soft">status:</span>{" "}
+            <span className="text-[#c3e88d]">&quot;open to work&quot;</span>
+          </p>
+          <p>
+            <span className="mr-4 text-muted">05</span>
+            {"}"}
+            <span className="ml-1 inline-block h-3.5 w-1 animate-pulse bg-teal align-middle" />
+          </p>
+        </div>
+        <div className="mt-5 border-t border-rim pt-4 text-[10px] tracking-[0.16em] text-teal/70">
+          ● AVAILABLE FOR OPPORTUNITIES
+        </div>
+      </div>
+
       <div className="absolute bottom-0 left-0 right-0 h-px bg-rim" />
     </section>
   );

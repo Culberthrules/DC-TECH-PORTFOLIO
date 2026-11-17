@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5">
         {/* Wordmark */}
         <span className="font-mono text-xs text-muted tracking-[0.18em] uppercase">
-          Damasus Culberth, DC Tech
+          DC Tech
         </span>
 
         {/* Links */}

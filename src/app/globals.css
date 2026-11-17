@@ -27,6 +27,12 @@ html {
 
 body {
   background-color: var(--color-canvas);
+  background-image:
+    radial-gradient(ellipse at 78% 12%, rgb(45 212 191 / 7%), transparent 34rem),
+    linear-gradient(rgb(237 232 227 / 2%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(237 232 227 / 2%) 1px, transparent 1px);
+  background-size: auto, 52px 52px, 52px 52px;
+  background-attachment: fixed;
   color: var(--color-ink);
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
