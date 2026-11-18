@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
       from,
       to: [to],
       replyTo: email,
-      subject: "New portfolio enquiry",
+      subject: `New Portfolio Message from ${name.replace(/[\r\n]+/g, " ")}`,
       text: [
         `Name: ${name.trim()}`,
         `Email: ${email}`,
